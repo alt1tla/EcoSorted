@@ -8,7 +8,10 @@
     {% endblock link %}
     <link href="/static/welcomepage/css/stylewrapper.css" rel="stylesheet">
     <link href="/static/welcomepage/image/Union.svg" rel="shortcut icon">
-    <title>Начни сейчас!</title>
+    <title>
+        {% block title %}
+        {% endblock title %}
+    </title>
 </head>
 <body>
     <header>

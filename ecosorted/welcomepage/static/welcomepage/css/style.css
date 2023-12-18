@@ -1,0 +1,266 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Corbby';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/static/welcomepage/fonts/Corbby.otf') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Cygre-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/static/welcomepage/fonts/Cygre-SemiBold.ttf') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Cygre-Light';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/static/welcomepage/fonts/Cygre-Light.ttf') format('woff2');
+}
+
+
+.wrapper {
+    width: 100%;
+    max-width: 134rem;
+    /* 65ch - удобоворимое кол-во символов на строке; */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 68px;
+}
+
+:root {
+    --color--1--:#FFFFFF;
+    --color--2--:#232323;
+    --color--3--:#26715D;
+    --color--4--:#A2E895;
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--color--2--);
+    font-size: 3.6rem;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-weight: 300;
+    background-color: var(--color--1--);
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--color--1--);
+    padding: 52px;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 104px;
+}
+
+header img {
+    display: block;
+}
+
+.logo {
+    max-height: max-content;
+    align-self: center;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    padding: 0;
+    flex-direction: row;
+}
+
+.navigation__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 52px;
+    margin: 0;
+    max-height: max-content;
+    align-self: center;
+    font-style: 2.4rem;
+    font-weight: 600;
+}
+
+.navigation__item{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color:var(--color--2--);
+    font-family: 'Cygre-SemiBold';
+}
+
+.btns{
+    padding: 0;
+    gap: 28px;
+    margin: 0;
+    max-height: max-content;
+    align-self: center;
+    font-size: 2.4rem;
+    font-weight: 300;
+    color:var(--color--2--);
+}
+.logos{
+    padding: 0;
+    gap: 112px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+.login{
+    color:var(--color--3--);
+    border-radius: 84px;
+    border-color: var(--color--4--);
+    background-color: var(--color--4--);
+    padding: 2px 20px;
+    font-family: 'Cygre-Light';
+}
+
+.registration{
+    color:var(--color--2--);
+    font-family: 'Cygre-Light';
+}
+
+.welcomepage__h{
+    font-size: 12.8rem;
+    font-weight: 400;
+    color:var(--color--3--);
+    margin: 0;
+    width: max-content;
+    margin-top: 100px ;
+    font-family: 'Corbby', sans-serif;
+}
+
+.welcomepage__p{
+    font-weight: 300;
+    font-size: 3.6rem;
+    color:var(--color--2--);
+    margin: 0;
+    width: max-content;
+    margin-bottom: 115px;
+    font-family: 'Cygre-Light';
+}
+
+.welcomepage__span{
+    color:var(--color--1--);
+    border-radius: 10px;
+    border-color: var(--color--3--);
+    background-color: var(--color--3--);
+    margin: 0;
+    padding: 0px 10px;
+    width: max-content;
+    font-family: 'Cygre-Light';
+}
+
+.welcomepage__p--num{
+    font-weight: 600;
+    font-size: 6.4rem;
+    color: var(--color--2--);
+    margin: 0;
+    width: max-content;
+    font-family: 'Cygre-SemiBold';
+}
+
+.welcomepage__p--numtext{
+    font-weight: 300;
+    font-size: 2.4rem;
+    color: var(--color--2--);
+    margin: 0;
+    width: max-content;
+    font-family: 'Cygre-Light';
+}
+
+.welcomepage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.welcomepage .wrapper{
+    display: flex;
+}
+
+.welcomepage__text{
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
+    grid-column:1;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
+    grid-column:-1;
+    background-image: url(/static/welcomepage/image/img.png);
+    width: 550px;
+    height: 663px;
+    border-radius: 40px;
+}
+
+.card__h,
+.card__p{
+    margin: 0;
+    width: max-content; 
+    margin-left: 30px;
+}
+
+.card__h{
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 4.8rem;
+    color: var(--color--1--);
+    margin-bottom: 20px;
+    font-family: 'Cygre-SemiBold';
+}
+
+.card__p{
+    font-weight: 300;
+    font-size: 2.4rem;
+    color: var(--color--1--);
+    font-family: 'Cygre-Light';
+}
+
+.card__link{
+    margin: 0;
+    display: flex;
+    color: var(--color--2--);
+    font-weight: 600;
+    font-size: 1.6rem;
+    align-items: center;
+    font-family: 'Cygre-SemiBold';
+}
+
+.card__link img{
+    margin-left: 5px;
+}
+
+.content{
+display: block;
+background-color: var(--color--1--);
+max-width: max-content;
+margin-top: 330px;
+border-radius: 100px;
+margin-left: 320px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-right: 10px;
+padding-left: 10px;
+}

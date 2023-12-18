@@ -130,7 +130,7 @@ header .wrapper {
     flex-direction: row;
 }
 .login{
-    color:var(--color--1--);
+    color:var(--color--3--);
     border-radius: 84px;
     border-color: var(--color--4--);
     background-color: var(--color--4--);
@@ -138,15 +138,87 @@ header .wrapper {
     font-family: 'Cygre-Light';
 }
 
-.login:hover{
-    background-color: var(--color--2--);
-}
-
 .registration{
     color:var(--color--2--);
     font-family: 'Cygre-Light';
 }
 
-.registration:hover{
+.mapspage__h{
+    font-family: 'Cygre-Light';
+    font-weight: 300;
+    font-size: 3.6rem;
+}
+
+.mapspage__span{
+    color:var(--color--1--);
+    border-radius: 10px;
+    border-color: var(--color--3--);
+    background-color: var(--color--3--);
+    margin: 0;
+    padding: 0px 10px;
+    width: max-content;
+    font-family: 'Cygre-Light';
+}
+
+.card{
+    background-color: var(--color--4--);
+    width: 566px;
+    height: 477px;
+    border-radius:20px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__h{
+    margin: 21px 206px 0px 50px;
+    font-weight: 600;
+    font-size: 4.8rem;
     color:var(--color--3--);
+    font-family: 'Cygre-SemiBold';
+}
+
+.lock{
+    width:83px;
+    height: 100px;
+    margin:62px auto;
+    margin-bottom: 14px;
+}
+
+.card__p{
+    font-family: 'Cygre-Light';
+    font-weight: 300;
+    font-size: 1.6rem;
+    color:var(--color--3--);
+    margin:0px auto;
+    margin-bottom: 65px;
+    text-align: center;
+}
+
+.card__link {
+    color:var(--color--1--);
+    font-family: 'Cygre-Light';
+    font-weight: 300;
+    font-size: 2.4rem;
+    border-radius: 84px;
+    border-color: var(--color--3--);
+    background-color: var(--color--3--);
+    padding: 2px 20px;
+
+}
+
+.card__link:hover {
+background-color: var(--color--2--);
+}
+
+.content{
+display: block;
+max-width: max-content;
+padding:0px 20px;
+margin: 0px auto;
+margin-bottom:50px;
+}
+
+.mapspage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

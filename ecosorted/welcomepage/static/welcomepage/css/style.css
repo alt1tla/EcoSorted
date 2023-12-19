@@ -204,7 +204,7 @@ header .wrapper {
     grid-column:-1;
     background-image: url(/static/welcomepage/image/img.png);
     width: 550px;
-    height: 633px;
+    height: 603px;
     border-radius: 40px;
 }
 
@@ -249,7 +249,7 @@ header .wrapper {
 display: block;
 background-color: var(--color--1--);
 max-width: max-content;
-margin-top: 330px;
+margin-top: 270px;
 border-radius: 100px;
 margin-left: 320px;
 padding-top: 5px;

@@ -67,6 +67,7 @@ header {
     display: flex;
     flex-direction: row;
     padding-bottom: 13px;
+    margin-bottom: 20px;
 }
 
 header img {

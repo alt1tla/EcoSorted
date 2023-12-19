@@ -1,0 +1,273 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Corbby';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/static/welcomepage/fonts/Corbby.otf') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Cygre-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/static/welcomepage/fonts/Cygre-SemiBold.ttf') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Cygre-Light';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/static/welcomepage/fonts/Cygre-Light.ttf') format('woff2');
+}
+
+
+.wrapper {
+    width: 100%;
+    max-width: 134rem;
+    /* 65ch - удобоворимое кол-во символов на строке; */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 68px;
+}
+
+:root {
+    --color--1--:#FFFFFF;
+    --color--2--:#232323;
+    --color--3--:#26715D;
+    --color--4--:#A2E895;
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--color--2--);
+    font-size: 3.6rem;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-weight: 300;
+    background-color: var(--color--1--);
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+header img {
+    display: block;
+}
+
+.logo {
+    max-height: max-content;
+    align-self: center;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    padding: 0;
+    flex-direction: row;
+}
+
+.navigation__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 52px;
+    margin: 0;
+    max-height: max-content;
+    align-self: center;
+    font-style: 2.4rem;
+    font-weight: 600;
+}
+
+.navigation__item{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color:var(--color--2--);
+    font-family: 'Cygre-SemiBold';
+}
+
+.navigation__item:hover{
+    color:var(--color--3--);
+}
+
+.btns{
+    padding: 0;
+    gap: 28px;
+    margin: 0;
+    max-height: max-content;
+    align-self: center;
+    font-size: 2.4rem;
+    font-weight: 300;
+    color:var(--color--2--);
+}
+.logos{
+    padding: 0;
+    gap: 112px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+.login{
+    color:var(--color--3--);
+    border-radius: 84px;
+    border-color: var(--color--4--);
+    background-color: var(--color--4--);
+    padding: 2px 20px;
+    font-family: 'Cygre-Light';
+}
+
+.registration{
+    color:var(--color--2--);
+    font-family: 'Cygre-Light';
+}
+
+.storepage__text{
+    margin-top:30px;
+}
+
+.storepage__h{
+    font-family: 'Cygre-Light';
+    font-weight: 300;
+    font-size: 3.6rem;
+}
+
+.storepage__span{
+    color:var(--color--1--);
+    border-radius: 10px;
+    border-color: var(--color--3--);
+    background-color: var(--color--3--);
+    margin: 0;
+    padding: 0px 10px;
+    width: max-content;
+    font-family: 'Cygre-Light';
+}
+
+.card{
+    background-color: var(--color--4--);
+    width: 348px;
+    height: 480px;
+    border-radius:20px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__h{
+    margin: 21px 206px 0px 50px;
+    font-weight: 600;
+    font-size: 4.8rem;
+    color:var(--color--3--);
+    font-family: 'Cygre-SemiBold';
+}
+
+.lock{
+    width:83px;
+    height: 100px;
+    margin:62px auto;
+    margin-bottom: 14px;
+}
+
+.card__p{
+    font-family: 'Cygre-Light';
+    font-weight: 300;
+    font-size: 1.6rem;
+    color:var(--color--3--);
+    margin:0px auto;
+    margin-bottom: 65px;
+    text-align: center;
+}
+
+.card__link {
+    color:var(--color--1--);
+    font-family: 'Cygre-Light';
+    font-weight: 300;
+    font-size: 2.4rem;
+    border-radius: 84px;
+    border-color: var(--color--3--);
+    background-color: var(--color--3--);
+    padding: 2px 20px;
+
+}
+
+.card__link:hover {
+background-color: var(--color--2--);
+}
+
+.content{
+display: block;
+max-width: max-content;
+padding:0px 20px;
+margin: 0px auto;
+margin-bottom:50px;
+}
+
+.storepage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.storepage__store{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    margin-top:60px;
+}
+
+.art{
+    background-image: url(/static/welcomepage/image/tshirt.png);
+    background-color: var(--color--4--);
+    border-radius: 20px;
+    width:348px;
+    height: 307px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px; 
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 4.8rem;
+    color:var(--color--1--);
+    font-family: 'Cygre-SemiBold';
+    margin: 0;
+}
+
+.price{
+    margin: 0;
+    padding: 25px 25px 0 25px;
+    max-width: max-content;
+    list-style: none;
+    font-weight: 600;
+    font-size: 2.4rem;
+    color:var(--color--3--);
+    font-family: 'Cygre-SemiBold';
+}
+
+.price::before{
+    content: url("/static/welcomepage/image/Unionlil.svg");
+}
+
+.price:hover ~ .title{
+    color: var(--color--2--);
+    text-decoration:underline;
+}
+
+.price:hover {
+    color: var(--color--2--);
+}

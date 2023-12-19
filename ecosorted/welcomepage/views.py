@@ -7,3 +7,6 @@ def index(request):
 
 def maps(request):
     return render(request, 'welcomepage/maps.html')
+
+def store(request):
+    return render(request, 'welcomepage/store.html')

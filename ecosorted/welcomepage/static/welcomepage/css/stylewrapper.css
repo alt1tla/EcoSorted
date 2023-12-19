@@ -60,13 +60,13 @@ a {
 
 header {
     background-color: var(--color--1--);
-    padding-top: 52px;
+    padding-top: 13px;
     position: sticky;
     z-index: 100;
     top: 0;
     display: flex;
     flex-direction: row;
-    padding-bottom: 52px;
+    padding-bottom: 13px;
 }
 
 header img {

@@ -58,16 +58,7 @@ a {
     text-decoration: none;
 }
 
-header {
-    background-color: var(--color--1--);
-    padding: 52px;
-    position: sticky;
-    z-index: 100;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 104px;
-}
+
 
 header img {
     display: block;

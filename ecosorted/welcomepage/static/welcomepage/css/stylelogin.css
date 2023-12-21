@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Corbby';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/Corbby.otf') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Cygre-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/Cygre-SemiBold.ttf') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Cygre-Light';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/fonts/Cygre-Light.ttf') format('woff2');
+}
+
+:root {
+    --color--1--:#FFFFFF;
+    --color--2--:#232323;
+    --color--3--:#26715D;
+    --color--4--:#A2E895;
+    font-size: 62.5%;
+}
+
+form {
+    font-family: 'Cygre-Light';
+    font-size: 2.4rem;
+    background-color: var(--color--4--);
+    border-radius: 4rem;
+    width: 100%;
+    max-width: 56.6rem;
+    min-height: 47.7rem;
+    margin: 0 auto;
+    color: var(--color--3--);
+}
+
+fieldset {
+    border: none;
+    padding: 5rem;    
+}
+
+legend {
+    font-family: 'Cygre-SemiBold';
+    font-size: 4.8rem;
+    color: var(--color--3--);
+}
+
+label {
+    display: block;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: 0.3s;
+    max-width: 46.6rem;
+}
+
+label:hover input {
+    border: solid var(--color--2--);  
+}
+
+label:hover ::placeholder {
+    color: var(--color--2--);
+}
+
+input {
+    display: block;
+    width: 100%;
+    min-height: 4.6rem;
+    border-radius: 2.3rem;
+    border: solid var(--color--3--);
+    transition: 0.3s;
+    padding: 0;
+}
+
+
+label:active input {
+    border: solid var(--color--2--);
+}
+
+input:focus {
+    border: solid var(--color--2--);
+    padding-left: 1.5rem;
+}
+
+input:focus::placeholder {
+    padding-left: 0;
+}
+
+input:valid, input:invalid {
+    padding-left: 1.5rem;
+}
+
+::placeholder {
+    color: var(--color--3--);
+    transition: 0.3s;
+}
+
+.form-login button {
+    width: 100%;
+    max-width: 12.4rem;
+    min-height: 4.6rem;
+    background-color: var(--color--3--);
+    border-radius: 2.3rem;
+    border: none;
+    color: var(--color--1--);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-login button:hover {
+    background-color: var(--color--1--);
+    color: var(--color--3--);
+}
+
+.form-login a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--color--3--);
+    transition: 0.3s;
+}
+
+.form-login a:hover {
+    color: var(--color--2--);
+}
+
+.clicks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.same-in-form {
+    margin-top: 5rem;
+}
+.same-in-form span {
+    padding-left: 1.65rem;
+}

@@ -1,0 +1,34 @@
+{% extends "welcomepage/wrapper.html" %}
+{% block link %}
+<link href="/static/welcomepage/css/normalize.css" rel="stylesheet">
+<link href="/static/welcomepage/css/stylelogin.css" rel="stylesheet">
+{% endblock link %}
+{% block title %}
+Вход
+{% endblock title %}
+
+{% block content %}
+<section class='wrapper'>
+    <form class="form-login" action="#" method="post">
+        {% csrf_token %}
+        <fieldset>
+            <div class="all-in-form">
+                <legend>Вход</legend>
+                <div class="same-in-form">
+                    <label><span>Имя пользователя</span><input type='text' id="username" name='username' placeholder='Veronika'
+                            required></label>
+                    <label><span>Почта</span><input type='email' id="useremail" name='useremail'
+                        placeholder='motvei@veseloff.su'  required></label>
+                    <label><span>Пароль</span><input type='password' id="password" name='password'
+                            placeholder='Mospolytech123!'  required></label>
+                </div>
+            </div>
+            <div class="clicks">
+                <a href="#">Нет аккаунта?</a>
+                <button>Войти</button>
+            </div>
+        </fieldset>
+        {{ form.errors}}
+    </form>
+</section>
+{% endblock content %}

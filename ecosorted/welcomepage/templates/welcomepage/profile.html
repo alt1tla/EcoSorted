@@ -1,0 +1,20 @@
+{% extends "welcomepage/wrapper.html" %}
+{% block link %}
+<link href="/static/welcomepage/css/styleprofile.css" rel="stylesheet">
+{% endblock link %}
+{% block title %}
+Это ты!
+{% endblock title %}
+{% block content %}
+<section class="wrapper">
+    <div class="profilepage">
+       <h1> Привет!
+         {{ user.username }}
+        </h1>
+    </div>
+    <button>
+        Выйти
+    </button>
+</section>
+
+{% endblock content %}

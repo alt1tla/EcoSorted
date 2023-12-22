@@ -206,6 +206,7 @@ header .wrapper {
     width: 550px;
     height: 603px;
     border-radius: 40px;
+    position: relative;
 }
 
 .card__h,
@@ -249,9 +250,10 @@ header .wrapper {
 display: block;
 background-color: var(--color--1--);
 max-width: max-content;
-margin-top: 220px;
+position: absolute;
 border-radius: 100px;
-margin-left: 330px;
+bottom: 8px;
+right: 8px;
 padding-top: 5px;
 padding-bottom: 5px;
 padding-right: 10px;

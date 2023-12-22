@@ -31,6 +31,7 @@
             </div>
             <div class="btns">
                 {% if user.is_authenticated %}
+                    <a hrf="#">{{user.username}}</a>
                     <a href="{% url 'logout' %}" title="Деавторизироваться" class="login">Выйти</a> 
                 {% else %}
                     <a href="{% url 'register' %}" title="Присоединиться" class="registration">Регистрация</a>
@@ -49,6 +50,7 @@
                     </div>
                 {% endfor %}
             {% endif  %}
+            </br>
         </section>
         {% block content %}
         {% endblock content %}

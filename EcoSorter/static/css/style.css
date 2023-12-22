@@ -223,6 +223,7 @@ header .wrapper {
     color: var(--color--1--);
     margin-bottom: 20px;
     font-family: 'Cygre-SemiBold';
+    line-height: 5rem;
 }
 
 .card__p{

@@ -1,0 +1,35 @@
+{% extends "wrapper.html" %}
+{% load static %}
+{% block link %}
+<link href="{% static 'css/stylestore.css' %}" rel="stylesheet">
+{% endblock link %}
+{% block title %}
+Магазин
+{% endblock title %}
+{% block content %}
+<section class="wrapper">
+    <div class="storepage">
+        <div class="storepage__text">
+            <h2 class="storepage__h">Отблагодарите<br><span class="storepage__span">себя</span> приятным<br><span class="storepage__span">подарком</span></h2>
+            <div class="card">
+                <p class="card__h">Баланс</p>
+                <img src="/media/image/lock.svg" alt="" class="lock">
+                <p class="card__p">войди, <br> чтобы увидеть</p>
+                <div class="content"><a href="#" title="Авторизоваться" class="card__link">Войти</a></div>
+            </div>
+        </div>
+        <div class="storepage__store">
+
+            {% for product in products %}
+            <article class="art">
+                <img class="img" alt="" title="" src="{{product.image.url}}">
+                <p class="price">{{product.price}}</p>
+                <p class="title">{{product.name}}</p> 
+                <p class="category">{{product.category}}</p> 
+            </article>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+{% endblock content %}

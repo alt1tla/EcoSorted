@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/normalize.css' %}" rel="stylesheet">
+    {% block link %}
+    {% endblock link %}
+    <link href="{% static 'css/stylewrapper.css' %}" rel="stylesheet">
+    <link href="/media/image/Union.svg" rel="shortcut icon">
+    <title>
+        {% block title %}
+        {% endblock title %}
+    </title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logos">
+                <a href="{% url 'home' %}" title="EcoSorted" class="logo"><img src="/media/image/Union.svg" alt="Logo"></a>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li ><a class="navigation__item" title="Карта" href="{% url 'map' %}">Карта</a></li>
+                        <li ><a class="navigation__item" title="Магазин" href="{% url 'store' %}">Магазин</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="btns">
+                {% if user.is_authenticated %}
+                    <a href="{% url 'logout' %}" title="Деавторизироваться" class="login">Выйти</a> 
+                {% else %}
+                    <a href="{% url 'register' %}" title="Присоединиться" class="registration">Регистрация</a>
+                    <a href="{% url 'login' %}" title="Авторизироваться" class="login">Войти</a> 
+                {% endif %}
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- <section>
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="wrapper alert alert-warning alert-dismissible fade show" role="alert">
+                        {{message}}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            {% endif  %}
+        </section> -->
+        {% block content %}
+        {% endblock content %}
+    </main>
+</body>
+</html>

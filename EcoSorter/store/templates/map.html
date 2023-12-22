@@ -1,0 +1,27 @@
+{% extends "wrapper.html" %}
+{% load static %}
+{% block link %}
+<link href="{% static 'css/stylemap.css' %}" rel="stylesheet">
+{% endblock link %}
+{% block title %}
+Карта
+{% endblock title %}
+{% block content %}
+<section class="wrapper">
+    <div class="mapspage">
+        <div class="mapspage__text">
+            <h2 class="mapspage__h">Наша <span class="mapspage__span">карта</span><br>с точками<br><span class="mapspage__span">сдачи мусора</span></h2>
+            <div class="card">
+                <p class="card__h">Верхний вал</p>
+                <img src="/media/image/lock.svg" alt="" class="lock">
+                <p class="card__p">войди, <br> чтобы увидеть</p>
+                <div class="content"><a href="#" title="Авторизоваться" class="card__link">Войти</a></div>
+            </div>
+        </div>
+        <div class="mapspage__map">
+            <img src="/media/image/map.svg" alt="" class="map">
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

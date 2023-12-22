@@ -1,0 +1,25 @@
+{% extends "wrapper.html" %}
+{% load static %}
+{% block link %}
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+{% endblock link %}
+{% block title %}
+Начни сейчас!
+{% endblock title %}
+{% block content %}
+<section class="wrapper">
+    <div class="welcomepage">
+        <div class="welcomepage__text">
+            <h1 class="welcomepage__h">ECOSORTER</h1>
+            <p class="welcomepage__p">твой наставник <br> в <span class="welcomepage__span">сортировке мусора</span></p>
+            <p class="welcomepage__p--num">23 000+</p>
+            <p class="welcomepage__p--numtext">пользователей</p>
+        </div>
+        <div class="card">
+            <p class="card__h">Начни <br> сортировать <br> сейчас!</p>
+            <p class="card__p">иначе завтра <br> не начнёшь</p>
+            <div class="content"><a href="#" title="Присоединиться" class="card__link">Присоединиться<img src="/media/image/arrow.svg" alt="arrow"></a></div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

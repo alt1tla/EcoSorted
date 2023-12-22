@@ -1,0 +1,32 @@
+{% extends "wrapper.html" %}
+{% load static %}
+{% block link %}
+<link href="{% static 'css/stylelogin.css' %}" rel="stylesheet">
+{% endblock link %}
+{% block title %}
+Авторизация
+{% endblock title %}
+
+{% block content %}
+<section class='wrapper'>
+    <form class="form-login" action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+        <fieldset>
+            <div class="all-in-form">
+                <legend>Вход</legend>
+                <div class="same-in-form">
+                    <label><span>Имя пользователя</span><input type='text' id="username" name='username' placeholder='Veronika'
+                            required></label>
+                    <label><span>Пароль</span><input type='password' id="password" name='password'
+                            placeholder='Matveiner123!'  required></label>
+                </div>
+            </div>
+            <div class="clicks">
+                <a href="#">Нет аккаунта?</a>
+                <button>Войти</button>
+            </div>
+        </fieldset>
+        {{ form.errors}}
+    </form>
+</section>
+{% endblock content %}

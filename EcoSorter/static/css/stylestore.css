@@ -165,7 +165,8 @@ header .wrapper {
     flex-direction: column;
 }
 
-.card__h{
+
+.balanse{
     margin: 21px 0px 0px 50px;
     font-weight: 600;
     font-size: 4.8rem;
@@ -227,58 +228,57 @@ margin-bottom:50px;
 }
 
 .art{
-    background-color: var(--color--4--);
     border-radius: 20px;
-    width:350px;
-    height: 350px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    row-gap: 100px; 
-    border: var(--color--3--) 5px solid;
-    padding: 0;
+    padding: 10px;
+    width:450px;
+    height: 600px;
+    background-color: var(--color--4--);
 }
 .img{
-    position: absolute;
-    margin: 0;
-    top:43px;
+    display: block;
+    margin: 0 auto;
     width: 350px;
+    height:310px;
 }
 
 .title{
-    margin: 0 auto;
-    z-index: 5;
+    margin: 0;
+    text-align: center;
     font-weight: 600;
     font-size: 4.8rem;
-    color:var(--color--1--);
+    color:var(--color--3--);
     font-family: 'Cygre-SemiBold';
 
 }
 
 .price{
-    margin: 0 auto 0 0px;
-    z-index: 5;
+    margin: 0;
     font-weight: 600;
     font-size: 2.4rem;
     color:var(--color--3--);
     font-family: 'Cygre-SemiBold';
-    padding-top:5px;
-    padding-bottom:5px;
-    padding-left: 5px;
 }
 
 .price::before{
     content: url(/media/image/Unionlil.svg);
     max-height: max-content;
     max-width: max-content;
+    margin: 0;
 }
 
 .category{
-    margin: 0 auto;
-    z-index: 5;
+    margin: 0;
     font-weight: 600;
     font-size: 2.4rem;
-    color:var(--color--1--);
+    color:var(--color--3--);
+    font-family: 'Cygre-SemiBold';
+}
+
+.description{
+    margin: 0;
+    font-weight: 600;
+    font-size: 2.4rem;
+    color:var(--color--3--);
     font-family: 'Cygre-SemiBold';
 }
 

@@ -166,7 +166,7 @@ header .wrapper {
 }
 
 .card__h{
-    margin: 21px 206px 0px 50px;
+    margin: 21px 0px 0px 50px;
     font-weight: 600;
     font-size: 4.8rem;
     color:var(--color--3--);

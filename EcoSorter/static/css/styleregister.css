@@ -35,8 +35,8 @@
 }
 
 form {
-    font-family: 'Cygre-Light';
-    font-size: 2.4rem;
+    font-family: 'Cygre-Light' !important;
+    font-size: 2.4rem !important;
     background-color: var(--color--4--);
     border-radius: 4rem;
     width: 100%;
@@ -44,17 +44,26 @@ form {
     min-height: 47.7rem;
     margin: 0 auto;
     color: var(--color--3--);
-    padding: 10px;
+    padding: 10px !important;
 }
 
 fieldset {
     border: none;
-    padding: 5rem;    
+    padding: 5rem ;    
+}
+
+ul {
+    list-style: none !important;
+    font-size: 1.6rem !important;
+}
+
+span{
+    font-size: 1.6rem !important;
 }
 
 legend {
     font-family: 'Cygre-SemiBold';
-    font-size: 4.8rem;
+    font-size: 4.8rem !important;
     color: var(--color--3--);
 }
 
@@ -77,8 +86,8 @@ label:hover ::placeholder {
 input {
     display: block;
     width: 100%;
-    min-height: 4.6rem;
-    border-radius: 2.3rem;
+    min-height: 4.6rem !important;
+    border-radius: 2.3rem !important;
     border: solid var(--color--3--);
     transition: 0.3s;
     padding: 0;
@@ -107,6 +116,8 @@ input:valid, input:invalid {
     transition: 0.3s;
 }
 
+
+
 .form-registr button {
     width: 100%;
     max-width: 27rem;
@@ -125,7 +136,7 @@ input:valid, input:invalid {
 }
 
 .form-registr a {
-    font-size: 1.6rem;
+    font-size: 1.6rem !important;
     text-decoration: none;
     color: var(--color--3--);
     transition: 0.3s;

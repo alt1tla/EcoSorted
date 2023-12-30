@@ -1,0 +1,17 @@
+{% extends "wrapper.html" %}
+{% load static %}
+{% block link %}
+<link href="{% static 'css/styleprofile.css' %}" rel="stylesheet">
+{% endblock link %}
+{% block title %}
+Авторизация
+{% endblock title %}
+
+{% block content %}
+<section class='wrapper'>
+    <div class="card">
+        <p class="user_name">Добро пожаловать <span class="user_name--name">{{ user.username }}</span>!</p>
+        <p>Здесь будет показываться информация о ваших успехах...</p>
+    </div>
+</section>
+{% endblock content %}

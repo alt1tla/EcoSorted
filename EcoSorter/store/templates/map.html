@@ -13,9 +13,13 @@
             <h2 class="mapspage__h">Наша <span class="mapspage__span">карта</span><br>с точками<br><span class="mapspage__span">сдачи мусора</span></h2>
             <div class="card">
                 <p class="card__h">Верхний вал</p>
+                {% if user.is_authenticated %}
+                <p class="card__h">{{user.username}}</p>
+                {% else %}
                 <img src="/media/image/lock.svg" alt="" class="lock">
                 <p class="card__p">войди, <br> чтобы увидеть</p>
                 <div class="content"><a href="{% url 'login' %}" title="Авторизоваться" class="card__link">Войти</a></div>
+                {% endif %}
             </div>
         </div>
         <div class="mapspage__map">

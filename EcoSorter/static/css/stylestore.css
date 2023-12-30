@@ -163,15 +163,22 @@ header .wrapper {
     border-radius:20px ;
     display: flex;
     flex-direction: column;
+    padding-left: 25px;
+    padding-right:25px;
 }
 
 
 .balanse{
-    margin: 21px 0px 0px 50px;
+    margin-top: 15px;
+    margin-bottom:15px;
+    
     font-weight: 600;
     font-size: 4.8rem;
     color:var(--color--3--);
     font-family: 'Cygre-SemiBold';
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 .lock{

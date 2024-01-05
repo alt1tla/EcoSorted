@@ -64,3 +64,7 @@ def register_user(request):
     
 def profile(request):
     return render(request,'profile.html',{})
+
+def product(request,pk):
+    product = Product.objects.get(id=pk)
+    return render(request,'product.html',{'product':product})

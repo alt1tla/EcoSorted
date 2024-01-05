@@ -1,0 +1,26 @@
+{% extends "wrapper.html" %}
+{% load static %}
+{% block link %}
+<link href="{% static 'css/styleproduct.css' %}" rel="stylesheet">
+{% endblock link %}
+{% block title %}
+Магазин
+{% endblock title %}
+{% block content %}
+<section class="wrapper">
+    <div class="card mb-3 card--product">
+        <div class="row g-0">
+            <div class="col-md-3 card--product--image">
+                <img src="{{product.image.url}}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8 ">
+                <div class="card-body">
+                    <p class="card-title card--product--category">{{product.category}}</p>
+                    <p class="card-title card--product--title">{{product.name}}</p>
+                    <p class="card-text card--product--text">{{product.descriptiom}}</p>
+                </div>
+          </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

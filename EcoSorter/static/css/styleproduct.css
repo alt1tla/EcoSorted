@@ -1,0 +1,91 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Corbby';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/static/fonts/Corbby.otf') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Cygre-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/static/fonts/Cygre-SemiBold.ttf') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Cygre-Light';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/static/fonts/Cygre-Light.ttf') format('woff2');
+}
+
+
+.wrapper {
+    width: 100%;
+    max-width: 134rem;
+    /* 65ch - удобоворимое кол-во символов на строке; */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 68px;
+}
+
+:root {
+    --color--1--:#FFFFFF;
+    --color--2--:#232323;
+    --color--3--:#26715D;
+    --color--4--:#A2E895;
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--color--2--);
+    font-size: 3.6rem;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-weight: 300;
+    background-color: var(--color--1--);
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card--product{
+    background-color: var(--color--4--);
+    border-color: var(--color--1--);
+    border-radius: 30px;
+}
+
+.card--product--title{
+    font-size: 3.6rem;
+    color:var(--color--3--);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card--product--text{
+    font-size: 2.4rem;
+    color:var(--color--3--);
+    font-weight: 300;
+}
+
+.card--product--category{
+    font-size: 2.4rem;
+    color: var(--color--3--);
+    font-weight: 400;
+    margin: 0;
+}
+
+.card--product--image{
+    border:5px solid var(--color--3--);
+    border-radius: 30px;
+    background-color: var(--color--1--);
+}

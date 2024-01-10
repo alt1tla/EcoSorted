@@ -1,0 +1,42 @@
+{% extends "wrapper.html" %}
+{% load static %}
+{% block link %}
+<link href="{% static 'css/stylestore.css' %}" rel="stylesheet">
+{% endblock link %}
+{% block title %}
+Магазин
+{% endblock title %}
+{% block content %}
+<section class="wrapper">
+    <div class="storepage">
+        <div class="storepage__text">
+            <h2 class="storepage__h">Отблагодарите<br><span class="storepage__span">себя</span> приятным<br><span class="storepage__span">подарком</span></h2>
+            <div class="card">
+                <p class="balanse">Баланс</p>
+                {% if user.is_authenticated %}
+                <p class="balanse">{{user.username}}</p>
+                {% else %}
+                <img src="/media/image/lock.svg" alt="" class="lock">
+                <p class="card__p">войди, <br> чтобы увидеть</p>
+                <div class="content"><a href="{% url 'login' %}" title="Авторизоваться" class="card__link">Войти</a></div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="storepage__store">
+
+            {% for product in products %}
+            <article class="art">
+                <a href="{% url 'product' product.id %}" >
+                    <p class="price">{{product.price}}</p>
+                    <p class="category">{{product.category}}</p> 
+                    <img class="img" alt="" title="" src="{{product.image.url}}">
+                    <p class="title">{{product.name}}</p> 
+                    <p class="description">{{product.descriptiom}}</p> 
+                </a>
+            </article>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+{% endblock content %}

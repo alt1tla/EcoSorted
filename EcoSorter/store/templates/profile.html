@@ -1,7 +1,7 @@
 {% extends "wrapper.html" %}
 {% load static %}
 {% block link %}
-<link href="{% static 'css/styleprofile.css' %}" rel="stylesheet">
+<link href="{% static 'css/styleprofile.css' %}" rel="stylesheet" xmlns="http://www.w3.org/1999/html">
 {% endblock link %}
 {% block title %}
 Авторизация
@@ -10,8 +10,34 @@
 {% block content %}
 <section class='wrapper'>
     <div class="card">
-        <p class="user_name">Добро пожаловать <span class="user_name--name">{{ user.username }}</span>!</p>
-        <p>Здесь будет показываться информация о ваших успехах...</p>
+        <div>
+        <p class="user_name">Ничего себе,</p>
+        <p class="user_name--name">{{ user.username }}</p>
+        </div>
+        <div class="user_data">
+            <div class="user_data--info">
+                <div class="user_data--info--email">
+                    <p>{{ user.email }}</p>
+                    <a href="#"><img class="user_data--info--email--img" src="/media/image/Edit.png" alt="Редактировать email"></a>
+                </div>
+                <div class="user_data--info--other">
+                    <a href="#">Изменить имя</a>
+                    <a href="#">Изменить пароль</a>
+                </div>
+                <a class="user_data--info--exit" href="#">Выйти</a>
+            </div>
+        </div>
+        <div class="user_balance">
+            <div class="user_balance--info">
+                <p class="user_balance--info--h1">Мо-ло-дец!</p>
+                <p class="user_balance--info--h2">на твоём счету вот такая красота:</p>
+                <div class="user_balance--info--coins">
+                    <img class="user_balance--info--coins--img" src="/media/image/Unionlil.svg" alt="">
+                    <p class="user_balance--info--coins--pass">30</p>
+                </div>
+                <a class="user_balance--info--buy" href="#">За покупками</a>
+            </div>
+        </div>
     </div>
 </section>
 {% endblock content %}

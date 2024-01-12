@@ -9,8 +9,8 @@ class Category(models.Model):
 
 
 class Customer(models.Model):
-    first_name = models.CharField(max_length=50)
-    last_name = models.CharField(max_length=50)
+    first_name = models.CharField(max_length=50, default='')
+    last_name = models.CharField(max_length=50, default='')
     phone = models.CharField(max_length=11)
     email = models.EmailField(max_length=100)
     password = models.CharField(max_length=50)
@@ -40,3 +40,11 @@ class Order(models.Model):
 
     def __str__(self):
         return self.product
+    
+class Task(models.Model):
+    name = models.CharField(max_length=100)
+    description = models.CharField(max_length=500, default='', blank=True, null=True)
+    cost = models.DecimalField(default=0, decimal_places=2, max_digits=6)
+
+    def __str__(self):
+        return self.name

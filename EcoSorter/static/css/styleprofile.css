@@ -85,8 +85,12 @@ a {
     font-family: 'Cygre-SemiBold';
     font-size: 7.2rem;
     line-height: 7.4rem;
-    display: table-cell;
+    display: inline-block;
     vertical-align: middle;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    max-width: 500px;
 }
 
 .user_data {

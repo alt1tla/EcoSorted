@@ -1,0 +1,39 @@
+{% extends "wrapper.html" %}
+{% load static %}
+{% block link %}
+<link href="{% static 'css/styleregister.css' %}" rel="stylesheet">
+{% endblock link %}
+{% block title %}
+Смена пароля
+{% endblock title %}
+{% block content %}
+<section class='wrapper'>
+    <form class="form-registr" action="{% url 'password' %}" method="post">
+        {% csrf_token %}
+        <p>
+            <label for="id_old_password">Старый пароль:</label>
+            <input type="password" name="old_password" autocomplete="current-password" autofocus="" required="" id="id_old_password"> 
+        </p>
+        <p>
+            <label for="id_new_password1">Новый пароль:</label>
+            <input type="password" name="new_password1" autocomplete="new-password" required="" aria-describedby="id_new_password1_helptext" id="id_new_password1">
+            <span class="helptext" id="id_new_password1_helptext"></span>
+        </p>
+        <ul class="list-group list-group-flush rules">
+            <li class="list-group-item rules-item">Ваш пароль не должен быть слишком похож на другую вашу личную информацию.</li>
+            <li class="list-group-item rules-item">Ваш пароль должен содержать не менее 8 символов.</li>
+            <li class="list-group-item rules-item">Ваш пароль не может быть широко используемым паролем.</li>
+            <li class="list-group-item rules-item">Ваш пароль не может быть полностью числовым.</li>
+        </ul>
+        <p></p>
+        <p>
+            <label for="id_new_password2">Подтверждение нового пароля:</label>
+            <input type="password" name="new_password2" autocomplete="new-password" required="" id="id_new_password2">
+        </p>
+        <div class="clicks">
+            <a href="{% url 'profile' %}">Ой, отмена...</a>
+            <button type='submit'>Поменять пароль</button>
+        </div>
+    </form>
+</section>
+{% endblock content %}

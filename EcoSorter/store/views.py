@@ -1,9 +1,11 @@
 from django.shortcuts import render, redirect
+from django.urls import reverse_lazy
 from .models import Product,Category,Task
 from django.contrib.auth import authenticate,login,logout
 from django.contrib import messages
 from django.contrib.auth.models import User
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, PasswordChangeForm
+from django.contrib.auth.views import PasswordChangeView
 from .forms import SignUpForm
 from django import forms
 
@@ -79,3 +81,7 @@ def category(request,foo):
     except:
         return redirect ("home")
     return render(request,'product.html',{'product':product})
+
+class PasswordsChangeView(PasswordChangeView):
+    form_class = PasswordChangeForm
+    success_url = reverse_lazy("home")

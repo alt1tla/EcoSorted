@@ -159,3 +159,15 @@ input:valid, input:invalid {
 .same-in-form span {
     padding-left: 1.65rem;
 }
+
+.rules{
+    font-size: 1.8rem !important;
+
+}
+
+.rules-item{
+    background-color: var(--color--4--)!important;
+    font-family: 'Cygre-Light' !important;
+    color: var(--color--3--);
+    border-color: var(--color--3--);
+}

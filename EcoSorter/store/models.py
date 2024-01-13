@@ -45,6 +45,7 @@ class Task(models.Model):
     name = models.CharField(max_length=100)
     description = models.CharField(max_length=500, default='', blank=True, null=True)
     cost = models.DecimalField(default=0, decimal_places=2, max_digits=6)
+    number = models.CharField(max_length=50,default ='One')
 
     def __str__(self):
         return self.name

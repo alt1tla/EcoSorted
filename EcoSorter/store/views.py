@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Product,Category
+from .models import Product,Category,Task
 from django.contrib.auth import authenticate,login,logout
 from django.contrib import messages
 from django.contrib.auth.models import User
@@ -17,7 +17,8 @@ def store(request):
 
 
 def map(request):
-    return render(request,'map.html',{})
+    tasks = Task.objects.all()
+    return render(request,'map.html',{'tasks':tasks})
 
 
 def login_user(request):

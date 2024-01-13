@@ -9,15 +9,25 @@
 {% block content %}
 <section class="wrapper">
     <div class="card mb-3 card--product">
+        <div class="product_nav">
+            <a href="#">Каталог</a>
+            <span>→</span>
+            <a href="#">{{product.category}}</a>
+            <span>→</span>
+            <a href="#">{{product.name}}</a>
+        </div>
         <div class="row g-0">
             <div class="col-md-3 card--product--image">
-                <img src="{{product.image.url}}" class="img-fluid rounded-start" alt="...">
+                <img src="{{product.image.url}}" alt="...">
             </div>
-            <div class="col-md-8 ">
-                <div class="card-body">
-                    <p class="card-title card--product--category">{{product.category}}</p>
-                    <p class="card-title card--product--title">{{product.name}}</p>
-                    <p class="card-text card--product--text">{{product.descriptiom}}</p>
+            <div class="product_info">
+                <p class="product_info--title">{{product.name}}</p>
+                <p class="product_info--desc">{{product.descriptiom}}</p>
+                <p class="product_info--size">Размер: универсальный (oversize)</p>
+                <div class="product_info--price_buy">
+                    <img src="/media/image/Unionlil.svg" alt="#">
+                    <p>{{product.price}}</p>
+                    <a href="#">В корзину</a>
                 </div>
           </div>
         </div>

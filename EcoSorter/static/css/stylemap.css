@@ -151,7 +151,7 @@ header .wrapper {
     font-family: 'Cygre-Light';
 }
 
-.card{
+.card--m{
     background-color: var(--color--4--);
     width: 566px;
     height: 477px;
@@ -220,4 +220,46 @@ margin-bottom:50px;
 .mapspage {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+.accordion-button{
+    font-size: 3rem !important;
+    font-family: 'Cygre-Light'!important;
+    background-color: var(--color--1--);
+    color: var(--color--2--)!important;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: var(--color--4--);
+}
+
+.accordion-button:hover{
+    color: var(--color--3--)!important;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: var(--color--1--)!important;
+    outline: 0;
+    box-shadow: var(--color--1--)!important;
+}
+
+.accordion-body{
+    font-size: 2.4rem !important;
+    font-family: 'Cygre-Light'!important;
+    color: var(--color--2--)!important;
+}
+
+.task-cost{
+    color: var(--color--2--);
+    border-radius: 10px;
+    border-color: var(--color--4--);
+    background-color: var(--color--4--);
+    margin: 0 0 0 auto;
+    padding: 0px 10px;
+    font-family: 'Cygre-Light';
+    max-width: max-content;
 }

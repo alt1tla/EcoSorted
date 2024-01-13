@@ -24,7 +24,7 @@
                     <a href="#">Изменить имя</a>
                     <a href="#">Изменить пароль</a>
                 </div>
-                <a class="user_data--info--exit" href="#">Выйти</a>
+                <a class="user_data--info--exit" href="{% url 'logout' %}">Выйти</a>
             </div>
         </div>
         <div class="user_balance">
@@ -35,7 +35,7 @@
                     <img class="user_balance--info--coins--img" src="/media/image/Unionlil.svg" alt="">
                     <p class="user_balance--info--coins--pass">30</p>
                 </div>
-                <a class="user_balance--info--buy" href="#">За покупками</a>
+                <a class="user_balance--info--buy" href="{% url 'store' %}">За покупками</a>
             </div>
         </div>
     </div>

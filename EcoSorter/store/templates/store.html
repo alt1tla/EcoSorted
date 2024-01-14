@@ -11,21 +11,24 @@
     <div class="storepage">
         <div class="storepage__text">
             <h2 class="storepage__h">Отблагодарите<br><span class="storepage__span">себя</span> приятным<br><span class="storepage__span">подарком</span></h2>
+            {% if user.is_authenticated %}
             <div class="card">
-                {% if user.is_authenticated %}
                 <p class="balanse perepolnenie">{{ user.username }},</p>
                 <p class="balanse">ваш баланс:</p>
                 <div class="balance--info--coins">
                     <img class="user_balance--info--coins--img" src="/media/image/Unionlil.svg" alt="">
                     <p class="balanse--coins">{{user.balanse}}</p>
                 </div>
-                {% else %}
+            </div>
+            {% else %}
+            <div class="card-block">
                 <img src="/media/image/lock.svg" alt="" class="lock">
                 <p class="balanse">Баланс</p>
                 <p class="card__p">войди, <br> чтобы увидеть</p>
                 <div class="content"><a href="{% url 'login' %}" title="Авторизоваться" class="card__link">Войти</a></div>
-                {% endif %}
             </div>
+            {% endif %}
+            
         </div>
         <div class="storepage__store">
 

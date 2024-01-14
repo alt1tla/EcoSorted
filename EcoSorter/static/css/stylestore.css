@@ -163,7 +163,6 @@ header .wrapper {
     border-radius:20px ;
     display: flex;
     flex-direction: column;
-
     padding: 25px;
 }
 
@@ -324,4 +323,14 @@ margin-bottom:50px;
     text-overflow: ellipsis;
     margin: 0;
     padding: 0;
+}
+
+.card-block{
+    background-color: var(--color--4--);
+    width: 348px;
+    height: 468px;
+    border-radius:20px ;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
 }

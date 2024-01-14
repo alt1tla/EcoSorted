@@ -42,6 +42,7 @@ html{
     --color--3--:#26715D;
     --color--4--:#A2E895;
     font-size: 62.5%;
+    Letter-spacing: 0.5549px;
 }
 
 body {
@@ -52,13 +53,12 @@ body {
     background-color: var(--color--1--);
     display: flex;
     flex-direction: column;
+    font-family: 'Cygre-Light';
 }
 
 a {
     text-decoration: none;
 }
-
-
 
 header img {
     display: block;
@@ -165,15 +165,15 @@ header .wrapper {
 .card__h{
     margin-top: 15px;
     margin-bottom:15px;
-    
+
     font-weight: 600;
     font-size: 4.8rem;
     color:var(--color--3--);
     font-family: 'Cygre-SemiBold';
-    white-space: nowrap; 
-    overflow: hidden; 
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
-    
+
 }
 
 .lock{
@@ -222,14 +222,12 @@ margin-bottom:50px;
     grid-template-columns: 1fr 1fr;
 }
 
-
-
-
 .accordion-button{
-    font-size: 3rem !important;
-    font-family: 'Cygre-Light'!important;
+    font-size: 2.4rem !important;
+    font-family: 'Cygre-Light' !important;
     background-color: var(--color--1--);
     color: var(--color--2--)!important;
+    transition: 0.5s;
 }
 
 .accordion-button:not(.collapsed){
@@ -237,6 +235,7 @@ margin-bottom:50px;
 }
 
 .accordion-button:hover{
+    background-color: var(--color--4--)!important;
     color: var(--color--3--)!important;
 }
 
@@ -245,26 +244,30 @@ margin-bottom:50px;
     border-color: var(--color--1--)!important;
     outline: 0;
     box-shadow: var(--color--1--)!important;
+    color: var(--color--3--)!important;
 }
 
-.accordion-body{
-    font-size: 2.4rem !important;
+.accordion-body {
+    font-size: 1.6rem !important;
     font-family: 'Cygre-Light'!important;
     color: var(--color--2--)!important;
     padding: 0;
-    margin: 0;
+    margin-bottom: 2.5rem;
 }
 
 .task-cost{
     color: var(--color--3--);
-    border-radius: 10px;
+    /*border-radius: 2.3rem;
     border-color: var(--color--4--);
     background-color: var(--color--4--);
-    padding: 0 10px;
-    font-family: 'Cygre-Light';
+    padding: 0.2rem 2rem;*/
+    font-family: 'Cygre-SemiBold';
     max-width: max-content;
     font-size: 2.4rem !important;
     display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    line-height: 3.9rem;
 }
 
 .group{
@@ -282,7 +285,13 @@ margin-bottom:50px;
 }
 
 .contents{
-    padding: 10px;
+    padding: 1.25rem;
+}
+
+.map {
+    width: 75.7rem;
+    height: 60.7rem;
+    margin-right: 5rem;
 }
 
 .map-bl{
@@ -301,8 +310,8 @@ margin-bottom:50px;
     font-size: 4.8rem;
     color:var(--color--3--);
     font-family: 'Cygre-SemiBold';
-    /* white-space: nowrap; 
-    overflow: hidden; 
+    /* white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis; */
 }
 
@@ -321,7 +330,7 @@ margin-bottom:50px;
     max-width: max-content;
     padding:0px 20px;
     margin: 0px auto;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
 
 .card__link {
@@ -333,7 +342,7 @@ margin-bottom:50px;
     border-color: var(--color--3--);
     background-color: var(--color--3--);
     padding: 2px 20px;
-    
+
 }
 
 .gr-bl{
@@ -358,16 +367,35 @@ margin-bottom:50px;
 
 
 .task-link{
-    color: var(--color--2--);
-    border-radius: 10px;
+    color: var(--color--3--);
+    border-radius: 2.3rem;
     border-color: var(--color--4--);
     background-color: var(--color--4--);
-    padding: 0 10px;
+    padding: 0.15rem 2rem;
     font-family: 'Cygre-Light';
     max-width: max-content;
-    font-size: 2.4rem !important;
+    font-size: 1.6rem !important;
+    line-height: 3.6rem;
+    transition: 0.5s;
 }
 
 .task-link:hover{
-    color:var(--color--3--);
+    background-color: var(--color--3--);
+    color: var(--color--1--);
+}
+
+.accordion {
+    border-radius: 4rem !important;
+    font-size: 2.4rem;
+}
+
+.accordion-header {
+
+}
+
+.zadania h1 {
+    font-family: 'Cygre-SemiBold';
+    line-height: 100%;
+    margin-bottom: 5rem;
+    font-size: 3.6rem;
 }

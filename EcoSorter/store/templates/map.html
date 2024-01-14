@@ -27,20 +27,33 @@
         </div>
     </div> -->
 
-  <div class="accordion" id="accordionFlushExample">
-    {% for task in tasks %}
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{task.number}}" aria-expanded="false" aria-controls="flush-collapseOne">
-          {{task.name}}
-        </button>
-      </h2>
-      <div id="flush-collapse{{task.number}}" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">{{task.description}}</div>
-        <span class="task-cost">{{task.cost}}</span>
+  <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A71046aaae36b839d9849fdf260ca18d66d05700f709f3e237c2521c36907cec3&amp;source=constructor" width="500" height="500" frameborder="0"></iframe> -->
+  
+  <div class="group">
+
+    <div class="map">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A71046aaae36b839d9849fdf260ca18d66d05700f709f3e237c2521c36907cec3&amp;width=500&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+
+    <div class="zadania">
+      <div class="accordion" id="accordionFlushExample">
+        {% for task in tasks %}
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{task.number}}" aria-expanded="false" aria-controls="flush-collapseOne">
+              {{task.name}}
+            </button>
+          </h2>
+          <div id="flush-collapse{{task.number}}" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">{{task.description}}</div>
+            <span class="task-cost">{{task.cost}}</span>
+          </div>
+        </div>
+        {% endfor %} 
       </div>
     </div>
-    {% endfor %} 
+
+  </div>
 </section>
 
 {% endblock content %}

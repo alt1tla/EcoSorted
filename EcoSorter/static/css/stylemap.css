@@ -264,3 +264,12 @@ margin-bottom:50px;
     max-width: max-content;
     font-size: 2.4rem !important;
 }
+
+.group{
+    display: flex;
+    flex-direction: row;
+}
+
+.zadania{
+    flex-grow: 1;
+}

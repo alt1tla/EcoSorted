@@ -256,7 +256,7 @@ margin-bottom:50px;
 }
 
 .task-cost{
-    color: var(--color--2--);
+    color: var(--color--3--);
     border-radius: 10px;
     border-color: var(--color--4--);
     background-color: var(--color--4--);
@@ -264,6 +264,7 @@ margin-bottom:50px;
     font-family: 'Cygre-Light';
     max-width: max-content;
     font-size: 2.4rem !important;
+    display: flex;
 }
 
 .group{
@@ -353,4 +354,20 @@ margin-bottom:50px;
 
 .fiss:hover{
     color: var(--color--3--);
+}
+
+
+.task-link{
+    color: var(--color--2--);
+    border-radius: 10px;
+    border-color: var(--color--4--);
+    background-color: var(--color--4--);
+    padding: 0 10px;
+    font-family: 'Cygre-Light';
+    max-width: max-content;
+    font-size: 2.4rem !important;
+}
+
+.task-link:hover{
+    color:var(--color--3--);
 }

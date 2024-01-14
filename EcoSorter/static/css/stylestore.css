@@ -174,9 +174,6 @@ header .wrapper {
     font-size: 4.8rem;
     color:var(--color--3--);
     font-family: 'Cygre-SemiBold';
-    /* white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; */
 }
 
 .balanse--coins{
@@ -320,3 +317,11 @@ margin-bottom:50px;
     text-overflow: ellipsis;
 }
 
+.perepolnenie{
+    display: block;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    margin: 0;
+    padding: 0;
+}

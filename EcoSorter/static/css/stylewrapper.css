@@ -188,3 +188,6 @@ body > footer {
   position: sticky;
   top: 100vh;
 }
+
+body{display:flex ; flex-direction: column;}
+main{margin-top: auto; margin-bottom: auto;}

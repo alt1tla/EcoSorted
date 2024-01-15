@@ -30,10 +30,10 @@ def login_user(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request,user)
-            messages.success(request,("Авторизация прошла успешно"))
+            messages.success(request,("Выполнен вход в аккаунт"))
             return redirect('home')
         else:
-            messages.success(request,("При авторизации произошла ошибка"))
+            messages.success(request,("Произошла ошибка — повторите попытку"))
             return redirect('login')
 
     else:    
@@ -43,7 +43,7 @@ def login_user(request):
 
 def logout_user(request):
     logout(request)
-    messages.success(request,("Деавторизация прошла успешно"))
+    messages.success(request,("Выполнен выход из аккаунта"))
     return redirect('home')
 
 
@@ -60,7 +60,7 @@ def register_user(request):
             messages.success(request,("Регистрация прошла успешно"))
             return redirect('home')
         else:
-            messages.success(request,("При регистрация произошла ошибка"))
+            messages.success(request,("Произошла ошибка — повторите попытку"))
             return redirect('register')
     else:
         return render(request,'register.html',{"form":form})

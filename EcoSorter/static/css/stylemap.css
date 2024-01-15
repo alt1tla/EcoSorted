@@ -31,7 +31,7 @@
     padding: 0 1rem;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     scroll-padding-top: 68px;
 }
@@ -60,50 +60,7 @@ a {
     text-decoration: none;
 }
 
-header img {
-    display: block;
-}
-
-.logo {
-    max-height: max-content;
-    align-self: center;
-}
-
-header .wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.navigation {
-    padding: 0;
-    flex-direction: row;
-}
-
-.navigation__list {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    gap: 52px;
-    margin: 0;
-    max-height: max-content;
-    align-self: center;
-    font-style: 2.4rem;
-    font-weight: 600;
-}
-
-.navigation__item{
-    font-size: 2.4rem;
-    font-weight: 600;
-    color:var(--color--2--);
-    font-family: 'Cygre-SemiBold';
-}
-
-.navigation__item:hover{
-    color:var(--color--3--);
-}
-
-.btns{
+.btns {
     padding: 0;
     gap: 28px;
     margin: 0;
@@ -113,14 +70,15 @@ header .wrapper {
     font-weight: 300;
     color:var(--color--2--);
 }
-.logos{
+.logos {
     padding: 0;
     gap: 112px;
     margin: 0;
     display: flex;
     flex-direction: row;
 }
-.login{
+ 
+.login {
     color:var(--color--3--);
     border-radius: 84px;
     border-color: var(--color--4--);
@@ -129,18 +87,18 @@ header .wrapper {
     font-family: 'Cygre-Light';
 }
 
-.registration{
+.registration {
     color:var(--color--2--);
     font-family: 'Cygre-Light';
 }
 
-.mapspage__h{
+.mapspage__h {
     font-family: 'Cygre-Light';
     font-weight: 300;
     font-size: 3.6rem;
 }
 
-.mapspage__span{
+.mapspage__span {
     color:var(--color--1--);
     border-radius: 10px;
     border-color: var(--color--3--);
@@ -151,7 +109,7 @@ header .wrapper {
     font-family: 'Cygre-Light';
 }
 
-.card--m{
+.card--m {
     background-color: var(--color--4--);
     width: 566px;
     height: 477px;
@@ -162,11 +120,9 @@ header .wrapper {
     padding-right:25px;
 }
 
-.card__h{
+.card__h {
     margin-top: 15px;
     margin-bottom:15px;
-
-    font-weight: 600;
     font-size: 4.8rem;
     color:var(--color--3--);
     font-family: 'Cygre-SemiBold';
@@ -176,45 +132,9 @@ header .wrapper {
 
 }
 
-.lock{
-    width:83px;
-    height: 100px;
-    margin:62px auto;
-    margin-bottom: 14px;
-}
-
-.card__p{
-    font-family: 'Cygre-Light';
-    font-weight: 300;
-    font-size: 1.6rem;
-    color:var(--color--3--);
-    margin:0px auto;
-    margin-bottom: 65px;
-    text-align: center;
-}
-
-.card__link {
-    color:var(--color--1--);
-    font-family: 'Cygre-Light';
-    font-weight: 300;
-    font-size: 2.4rem;
-    border-radius: 84px;
-    border-color: var(--color--3--);
-    background-color: var(--color--3--);
-    padding: 2px 20px;
-
-}
-
-.card__link:hover {
-background-color: var(--color--2--);
-}
-
-.content{
-display: block;
-max-width: max-content;
-padding:0px 20px;
-margin: 0px auto;
-margin-bottom:50px;
+.lock {
+    width: 8.3rem;
+    height: 10rem;
 }
 
 .mapspage {
@@ -268,6 +188,7 @@ margin-bottom:50px;
     align-items: center;
     gap: 0.7rem;
     line-height: 3.9rem;
+    padding-left: 1.25rem;
 }
 
 .group{
@@ -294,85 +215,84 @@ margin-bottom:50px;
     margin-right: 5rem;
 }
 
-.map-bl{
-    width: 500px;
-    height: 500px;
+.map-bl {
+    width: 75.7rem;
+    height: 60.5rem;
     background-color: var(--color--4--);
     display: flex;
     flex-direction: column;
-    padding-left: 25px;
-    padding-right:25px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem;
+    margin-right: 5rem;
+    border-radius: 4rem;
 }
 
 .balanse{
     text-align: center;
-    font-weight: 600;
     font-size: 4.8rem;
     color:var(--color--3--);
     font-family: 'Cygre-SemiBold';
-    /* white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; */
+    line-height: 100%;
 }
 
-.card__p{
+.card__p {
     font-family: 'Cygre-Light';
-    font-weight: 300;
     font-size: 1.6rem;
     color:var(--color--3--);
-    margin:0px auto;
-    margin-bottom: 65px;
     text-align: center;
-}
-
-.content{
-    display: block;
-    max-width: max-content;
-    padding:0px 20px;
-    margin: 0px auto;
-    margin-bottom: 50px;
+    line-height: 110%;
+    margin: 0;
 }
 
 .card__link {
     color:var(--color--1--);
     font-family: 'Cygre-Light';
-    font-weight: 300;
     font-size: 2.4rem;
-    border-radius: 84px;
-    border-color: var(--color--3--);
+    border-radius: 2.3rem;
     background-color: var(--color--3--);
-    padding: 2px 20px;
+    display: block;
+    padding: 0.5rem 2.5rem;
+    transition: 0.5s;
 
 }
 
-.gr-bl{
+.card__link:hover {
+    background-color: var(--color--1--);
+    color: var(--color--3--);
+}
+
+.gr-bl {
     display: flex;
     flex-direction: row;
 }
 
-.legend{
+.legend {
     flex-grow: 1;
 }
 
-.fiss{
-    font-size: 3rem;
+.fiss {
+    font-size: 2.4rem;
     font-family: 'Cygre-Light';
     background-color: var(--color--1--);
     color: var(--color--2--);
+    transition: 0.5s;
+    cursor: pointer;
 }
 
-.fiss:hover{
+.fiss:hover {
     color: var(--color--3--);
-}
-
-
-.task-link{
-    color: var(--color--3--);
-    border-radius: 2.3rem;
-    border-color: var(--color--4--);
     background-color: var(--color--4--);
+}
+
+
+.task-link {
+    color: var(--color--2--);
+    border-radius: 2.3rem;
+    border-color: var(--color--1--);
+    background-color: var(--color--1--);
     padding: 0.15rem 2rem;
-    font-family: 'Cygre-Light';
+    font-family: 'Cygre-SemiBold';
     max-width: max-content;
     font-size: 1.6rem !important;
     line-height: 3.6rem;
@@ -380,8 +300,8 @@ margin-bottom:50px;
 }
 
 .task-link:hover{
-    background-color: var(--color--3--);
-    color: var(--color--1--);
+    background-color: var(--color--4--);
+    color: var(--color--3--);
 }
 
 .accordion {
@@ -389,13 +309,16 @@ margin-bottom:50px;
     font-size: 2.4rem;
 }
 
-.accordion-header {
-
-}
-
-.zadania h1 {
+.zadania h1, .legend h1{
     font-family: 'Cygre-SemiBold';
     line-height: 100%;
     margin-bottom: 5rem;
     font-size: 3.6rem;
+}
+
+.map-bl div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
 }

@@ -32,6 +32,7 @@
     --color--3--:#26715D;
     --color--4--:#A2E895;
     font-size: 62.5%;
+    Letter-spacing: 0.5549px;
 }
 
 form {
@@ -48,13 +49,15 @@ form {
 
 fieldset {
     border: none;
-    padding: 5rem;    
+    padding: 5rem;  
 }
 
 legend {
     font-family: 'Cygre-SemiBold';
     font-size: 4.8rem;
     color: var(--color--3--);
+    line-height: 100%;
+    margin-bottom: 2.5rem;
 }
 
 label {
@@ -81,8 +84,8 @@ input {
     border: solid var(--color--3--);
     transition: 0.3s;
     padding: 0;
+    font-family: 'Cygre-SemiBold';
 }
-
 
 label:active input {
     border: solid var(--color--2--);
@@ -103,7 +106,8 @@ input:valid, input:invalid {
 
 ::placeholder {
     color: var(--color--3--);
-    transition: 0.3s;
+    transition: 0.5s;
+    font-family: 'Cygre-Light';
 }
 
 .form-login button {
@@ -115,7 +119,7 @@ input:valid, input:invalid {
     border: none;
     color: var(--color--1--);
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .form-login button:hover {
@@ -138,12 +142,12 @@ input:valid, input:invalid {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 5rem;
+}
+
+.same-in-form span {
+    padding-left: 1.65rem;
 }
 
 .same-in-form {
-    margin-top: 5rem;
-}
-.same-in-form span {
-    padding-left: 1.65rem;
+    margin-bottom: 7.9rem;
 }

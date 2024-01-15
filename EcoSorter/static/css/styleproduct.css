@@ -160,3 +160,7 @@ a {
 .product_nav a:hover {
     color: var(--color--3--);
 }
+
+.product_nav p {
+    margin: 0;
+}

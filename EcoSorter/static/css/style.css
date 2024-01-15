@@ -197,7 +197,7 @@ header .wrapper {
     grid-column:1;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     grid-row: 1;
@@ -207,17 +207,17 @@ header .wrapper {
     height: 603px;
     border-radius: 40px;
     position: relative;
+    padding: 2.5rem;
 }
 
 .card__h,
 .card__p{
     margin: 0;
     width: max-content; 
-    margin-left: 30px;
+    line-height: 100%;
 }
 
 .card__h{
-    margin-top: 12px;
     font-weight: 600;
     font-size: 4.8rem;
     color: var(--color--1--);
@@ -232,8 +232,8 @@ header .wrapper {
     color: var(--color--1--);
     font-family: 'Cygre-Light';
 }
-
-.card__link{
+ 
+.card__link {
     margin: 0;
     display: flex;
     color: var(--color--2--);
@@ -241,22 +241,22 @@ header .wrapper {
     font-size: 1.6rem;
     align-items: center;
     font-family: 'Cygre-SemiBold';
+    display: block;
+    background-color: var(--color--1--);
+    border-radius: 100px;
+    max-width: max-content;
+    padding: 0.5rem 1.5rem 0.5rem 3rem;
+    position: absolute;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    line-height: 100%;
 }
 
-.card__link img{
-    margin-left: 5px;
+.card__link img {
+    margin-left: 2rem;
+    transition: 0.5s ease-in-out;
 }
 
-.content{
-display: block;
-background-color: var(--color--1--);
-max-width: max-content;
-position: absolute;
-border-radius: 100px;
-bottom: 8px;
-right: 8px;
-padding-top: 5px;
-padding-bottom: 5px;
-padding-right: 10px;
-padding-left: 10px;
+.card__link:hover img {
+    transform: translateX(1rem);
 }

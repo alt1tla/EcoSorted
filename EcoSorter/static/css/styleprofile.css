@@ -158,6 +158,8 @@ a {
     border-radius: 2.3rem;
     padding: 0.5rem 2.5rem;
     transition: 0.5s;
+    width: 100%;
+    text-align: center;
 }
 
 .user_data--info--other a:hover, .user_data--info--email a:hover {
@@ -166,7 +168,7 @@ a {
 }
 
 .user_data--info--exit {
-    color: var(--color--1--);
+    color: var(--color--1--) !important;
     background-color: var(--color--3--);
     border: 0.1rem solid var(--color--3--);
     border-radius: 2.3rem;
@@ -177,9 +179,9 @@ a {
 }
 
 .user_data--info--exit:hover {
-    color: var(--color--3--);
-    background-color: var(--color--1--);
-    border: 0.1rem solid var(--color--1--);
+    color: var(--color--3--) !important;
+    background-color: var(--color--1--) !important;
+    border: 0.1rem solid var(--color--1--) !important;
 }
 
 .user_balance {
@@ -259,4 +261,11 @@ a {
     width: 8.7rem;
     height: 6.8rem;
     margin-right: 2.5rem;
+}
+
+.user_data--info--title {
+    font-family: 'Cygre-SemiBold';
+    font-size: 3.6rem;
+    margin: 0;
+    line-height: 100%;
 }

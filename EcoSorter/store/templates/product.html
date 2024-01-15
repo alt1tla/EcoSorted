@@ -10,11 +10,11 @@
 <section class="wrapper">
     <div class="card mb-3 card--product">
         <div class="product_nav">
-            <a href="#">Каталог</a>
+            <a href="{% url 'store' %}">Каталог</a>
             <span>→</span>
-            <a href="#">{{product.category}}</a>
+            <p>{{ product.category }}</p>
             <span>→</span>
-            <a href="#">{{product.name}}</a>
+            <p>{{ product.name }}</p>
         </div>
         <div class="row g-0">
             <div class="col-md-3 card--product--image">

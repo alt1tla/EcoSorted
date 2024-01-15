@@ -17,13 +17,13 @@
         </div>
         <div class="card">
             {% if user.is_authenticated %}
-            <p class="card__h">Выполняй <br> задания <br> прямо сейчас!</p>
-            <p class="card__p">получай баллы</p>
-            <div class="content"><a href="{% url 'store' %}" title="Магазин" class="card__link">Призы за баллы<img src="/media/image/arrow.svg" alt="arrow"></a></div>
+            <p class="card__h">Выполняй <br> задания <br> сейчас!</p>
+            <p class="card__p">копи баллы <br> и покупай мерч</p>
+            <div class="content"><a href="{% url 'store' %}" title="Магазин" class="card__link">Хочу мерч<img src="/media/image/arrow.svg" alt="arrow"></a></div>
             {% else %}
             <p class="card__h">Начни <br> сортировать <br> сейчас!</p>
             <p class="card__p">иначе завтра <br> не начнёшь</p>
-            <div class="content"><a href="{% url 'register' %}" title="Присоединиться" class="card__link">Присоединиться<img src="/media/image/arrow.svg" alt="arrow"></a></div>
+            <a href="{% url 'register' %}" title="Присоединиться" class="card__link">Присоединиться<img src="/media/image/arrow.svg" alt="arrow"></a>
             {% endif %}
         </div>
     </div>

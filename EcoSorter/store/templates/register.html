@@ -10,6 +10,7 @@
 <section class='wrapper'>
     <form class="form-registr" action="{% url 'register' %}" method="post">
         {% csrf_token %}
+        <legend>Регистрация</legend>
 
         {{form.as_p}}
 

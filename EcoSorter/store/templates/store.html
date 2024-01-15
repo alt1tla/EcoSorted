@@ -30,6 +30,7 @@
             {% endif %}
             
         </div>
+        {% if user.is_authenticated %}
         <div class="storepage__store">
 
             {% for product in products %}
@@ -45,6 +46,23 @@
             {% endfor %}
 
         </div>
+        {% else %}
+        <div class="storepage__store">
+
+            {% for product in products %}
+            <article class="art">
+                <a href="{% url 'login' %}" >
+                    <p class="price">{{product.price}}</p>
+                    <p class="category">{{product.category}}</p> 
+                    <img class="img" alt="" title="" src="{{product.image.url}}">
+                    <p class="title">{{product.name}}</p> 
+                    <p class="description">{{product.descriptiom}}</p> 
+                </a>
+            </article>
+            {% endfor %}
+
+        </div>
+        {% endif %}
     </div>
 </section>
 {% endblock content %}
